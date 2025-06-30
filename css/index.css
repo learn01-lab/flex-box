@@ -1,0 +1,163 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(227, 240, 227);
+}
+
+label {
+    font-size: 14px;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+form {
+    background-color: white;
+    width: 100%;
+    max-width: 512px;
+    height: fit-content;
+    border-radius: 16px;
+    padding-top: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+}
+
+form h1 {
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.form_input {
+    margin-top: 24px;
+}
+
+.form_input .firstname_lastname {
+    display: flex;
+    gap: 16px
+}
+
+.firstname_lastname .first_name 
+input {
+    width: 100%;
+    margin-top: 8px;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid rgb(64, 92, 64);
+}
+
+.firstname_lastname .first_name 
+label{
+    font-size: 14px;
+}
+
+.firstname_lastname .last_name 
+label{
+    font-size: 14px;
+}
+
+.firstname_lastname .last_name 
+input {
+    width: 100%;
+    margin-top: 8px;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid rgb(64, 92, 64);
+}
+
+.form_input .email {
+    margin-top: 12px;
+}
+
+.form_input .email label {
+    font-size: 14px;
+}
+
+.form_input .email 
+input {
+    width: 100%;
+    margin-top: 8px;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid rgb(64, 92, 64);
+}
+
+.query {
+    margin-top: 8px;
+}
+
+.query .query_type {
+    display: flex;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.query_type .gen {
+    width: 100%;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid rgb(64, 92, 64);
+    padding-left: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.query_type .support {
+    width: 100%;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid rgb(64, 92, 64);
+    padding-left: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.message {
+    margin-top: 16px;
+}
+
+.message textarea {
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 4px;
+    border: 1px solid rgb(64, 92, 64); 
+}
+
+.consent {
+    margin-top: 16px; 
+}
+
+form button {
+    width: 100%;
+    margin-top: 24px;
+    height: 32px;
+    background-color: rgb(16, 132, 16);
+    border-radius: 4px;
+    border: none;
+    color: white;
+}
+
+@media only screen and (max-width:400px) {
+    .firstname_lastname {
+        flex-direction: column;
+    }
+    .query_type {
+        flex-direction: column;
+    }
+    .message textarea {
+        min-height: 200px;
+    }
+
+}
